@@ -26,6 +26,8 @@ namespace OOD_RecipeApp
         List<Category> categoryList = new List<Category>();
         List<Recipe> recipeList = new List<Recipe>();
 
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -34,7 +36,7 @@ namespace OOD_RecipeApp
         private void BAddCategory_Click(object sender, RoutedEventArgs e)
         {
             categoryList.Add(new Category(TBCategory.Text, DateTime.Now.Year));
-            
+
             LBCategory.ItemsSource = null;
             LBCategory.ItemsSource = categoryList;
 
@@ -74,16 +76,6 @@ namespace OOD_RecipeApp
             }
         }
 
-        private void LBRecipe_Loaded(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
-        private void LBCategory_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void LBCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SelectedCategory = LBCategory.SelectedItem as Category;
@@ -101,8 +93,9 @@ namespace OOD_RecipeApp
 
             if (SelectedRecipe != null)
             {
-
+                
             }
         }
+
     }
 }
