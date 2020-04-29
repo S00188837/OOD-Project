@@ -9,15 +9,20 @@ namespace OOD_RecipeApp
     class Category : IComparable
     {
         public string Name { get; set; }
-        public int DateFormed { get; set; }
-        public Recipe[] Recipes { get; set; }
+        public int Date { get; set; }
+        public List<Recipe> Recipes { get; set; }
 
+        public Category(string name, int date)
+        {
+            Name = name;
+            Date = date;
+            Recipes = new List<Recipe>();
+        }
 
         public override string ToString()
         {
-            return string.Format($"{Name} - {DateFormed}");
+            return Name + " " + Date;
         }
-
 
         public int CompareTo(object obj)
         {
@@ -36,19 +41,4 @@ namespace OOD_RecipeApp
         }
     }
 
-    class Dessert : Category
-    {
-        public Dessert()
-        {
-            Recipes = new Recipe[5];
-        }
-    }
-
-    class Dinner : Category
-    {
-        public Dinner()
-        {
-            Recipes = new Recipe[5];
-        }
-    }
 }

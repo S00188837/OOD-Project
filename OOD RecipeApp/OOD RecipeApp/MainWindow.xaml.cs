@@ -13,42 +13,96 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OOD_RecipeApp
+namespace OOD_RecipeApp 
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        Category[] categoryList;
+        Category SelectedCategory;
+        Recipe SelectedRecipe;
+
+        List<Category> categoryList = new List<Category>();
+        List<Recipe> recipeList = new List<Recipe>();
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private Category[] GetCategories()
+        private void BAddCategory_Click(object sender, RoutedEventArgs e)
         {
-            Dessert Desserts = new Dessert() { Name = "Desserts", DateFormed = 2019};
+            categoryList.Add(new Category(TBCategory.Text, DateTime.Now.Year));
+            
+            LBCategory.ItemsSource = null;
+            LBCategory.ItemsSource = categoryList;
 
-            Dinner Dinners = new Dinner() { Name = "Dinners", DateFormed = 2017 };
+            TBCategory.Text = null;
+        }
 
-            Category[] categoriesCreated = { Desserts, Dinners};
-            return categoriesCreated;
+        private void BRemoveCategory_Click(object sender, RoutedEventArgs e)
+        {
+            categoryList.Remove(LBCategory.SelectedItem as Category);
+            LBCategory.ItemsSource = null;
+            LBCategory.ItemsSource = categoryList;
+
+            LBRecipe.ItemsSource = null;
+        }
+
+        private void BAddRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedCategory != null)
+            {
+                SelectedCategory.Recipes.Add(new Recipe(TBRecipe.Text, DateTime.Now));
+
+                LBRecipe.ItemsSource = null;
+                LBRecipe.ItemsSource = SelectedCategory.Recipes;
+
+                TBRecipe.Text = null;
+            }
+        }
+
+        private void BRemoveRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedRecipe != null)
+            {
+                SelectedCategory.Recipes.Remove(SelectedRecipe);
+
+                LBRecipe.ItemsSource = null;
+                LBRecipe.ItemsSource = SelectedCategory.Recipes;
+            }
+        }
+
+        private void LBRecipe_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
 
         private void LBCategory_Loaded(object sender, RoutedEventArgs e)
         {
-            categoryList = GetCategories();
-
-            Array.Sort(categoryList);
-
-            LBCategory.ItemsSource = categoryList;
+            
         }
 
-        private void BAddCategory_Click(object sender, RoutedEventArgs e)
+        private void LBCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            SelectedCategory = LBCategory.SelectedItem as Category;
 
+            if (LBCategory.SelectedItem != null)
+            {
+                LBRecipe.ItemsSource = null;
+                LBRecipe.ItemsSource = SelectedCategory.Recipes;
+            }
+        }
+
+        private void LBRecipe_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SelectedRecipe = LBRecipe.SelectedItem as Recipe;
+
+            if (SelectedRecipe != null)
+            {
+
+            }
         }
     }
 }

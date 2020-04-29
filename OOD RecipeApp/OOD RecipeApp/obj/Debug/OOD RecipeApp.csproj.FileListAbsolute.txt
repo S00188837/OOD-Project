@@ -13,3 +13,18 @@ C:\Users\Domas\source\repos\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.
 C:\Users\Domas\source\repos\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csproj.CoreCompileInputs.cache
 C:\Users\Domas\source\repos\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.exe
 C:\Users\Domas\source\repos\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.pdb
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\OOD RecipeApp.exe.config
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\OOD RecipeApp.exe
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\OOD RecipeApp.pdb
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csprojAssemblyReference.cache
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\MainWindow.g.cs
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\App.g.cs
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp_MarkupCompile.cache
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp_MarkupCompile.lref
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\MainWindow.baml
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.g.resources
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD_RecipeApp.Properties.Resources.resources
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csproj.GenerateResource.cache
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.exe
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.pdb
