@@ -6,19 +6,28 @@
         xmlns:local="clr-namespace:OOD_RecipeApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="LBCategory" HorizontalAlignment="Left" Height="255" Margin="44,53,0,0" VerticalAlignment="Top" Width="149" SelectionChanged="LBCategory_SelectionChanged"/>
-        <ListBox x:Name="LBRecipe" HorizontalAlignment="Left" Height="253" Margin="626,55,0,0" VerticalAlignment="Top" Width="134" SelectionChanged="LBRecipe_SelectionChanged"/>
-        <Button x:Name="BRemoveCategory" Content="REMOVE" HorizontalAlignment="Left" Margin="128,360,0,0" VerticalAlignment="Top" Width="56" Click="BRemoveCategory_Click"/>
-        <Button x:Name="BAddCategory" Content="ADD" HorizontalAlignment="Left" Margin="63,360,0,0" VerticalAlignment="Top" Width="40" Click="BAddCategory_Click"/>
-        <TextBox x:Name="TBCategory" HorizontalAlignment="Left" Height="23" Margin="44,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
-        <Button x:Name="BAddRecipe" Content="ADD" HorizontalAlignment="Left" Margin="640,365,0,0" VerticalAlignment="Top" Width="43" Click="BAddRecipe_Click"/>
+    <Grid Background="#FFFBD1D1">
+        <ListBox x:Name="LBCategory" HorizontalAlignment="Left" Height="255" Margin="44,53,0,0" VerticalAlignment="Top" Width="149" SelectionChanged="LBCategory_SelectionChanged" Background="#FFE69898"/>
+        <ListBox x:Name="LBRecipe" HorizontalAlignment="Left" Height="253" Margin="626,55,0,0" VerticalAlignment="Top" Width="134" SelectionChanged="LBRecipe_SelectionChanged" Background="#FFE69898"/>
+        <Button x:Name="BRemoveCategory" Content="REMOVE" HorizontalAlignment="Left" Margin="120,360,0,0" VerticalAlignment="Top" Width="50" Click="BRemoveCategory_Click"/>
+        <Button x:Name="BAddCategory" Content="ADD" HorizontalAlignment="Left" Margin="75,360,0,0" VerticalAlignment="Top" Width="40" Click="BAddCategory_Click" RenderTransformOrigin="1.101,0.423"/>
+        <TextBox x:Name="TBCategory" HorizontalAlignment="Left" Height="23" Margin="44,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="White"/>
+        <Button x:Name="BAddRecipe" Content="ADD" HorizontalAlignment="Left" Margin="649,365,0,0" VerticalAlignment="Top" Width="43" Click="BAddRecipe_Click"/>
         <Button x:Name="BRemoveRecipe" Content="REMOVE" HorizontalAlignment="Left" Margin="697,365,0,0" VerticalAlignment="Top" Width="51" Click="BRemoveRecipe_Click"/>
         <TextBox x:Name="TBRecipe" HorizontalAlignment="Left" Height="23" Margin="626,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
-        <RichTextBox x:Name="RichTB" HorizontalAlignment="Left" Height="226" Margin="207,55,0,0" VerticalAlignment="Top" Width="404">
+        <RichTextBox x:Name="RichTB" HorizontalAlignment="Left" Margin="207,55,0,0" VerticalAlignment="Top" Width="404" Height="239" RenderTransformOrigin="0.5,0.5" Background="#FFE69898">
+            <RichTextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RichTextBox.RenderTransform>
             <FlowDocument/>
         </RichTextBox>
-        <ListBox x:Name="UserDataBase" HorizontalAlignment="Left" Height="109" Margin="207,300,0,0" VerticalAlignment="Top" Width="404"/>
+        <ListBox x:Name="UserDataBase" HorizontalAlignment="Left" Height="109" Margin="207,300,0,0" VerticalAlignment="Top" Width="404" Background="#FFE69898"/>
+        <Button x:Name="Customers" Content="Customers" HorizontalAlignment="Left" Margin="368,30,0,0" VerticalAlignment="Top" Width="75" Click="Customers_Click"/>
 
     </Grid>
 </Window>

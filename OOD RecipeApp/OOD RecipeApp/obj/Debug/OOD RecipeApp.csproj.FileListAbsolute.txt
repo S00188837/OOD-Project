@@ -28,3 +28,13 @@ C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debu
 C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csproj.CoreCompileInputs.cache
 C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.exe
 C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.pdb
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\NORTHWND.MDF
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\NORTHWND_log.ldf
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\EntityFramework.dll
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\EntityFramework.xml
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp_Content.g.cs
+C:\Users\Domas\Documents\GitHub\OOD-Project\OOD RecipeApp\OOD RecipeApp\obj\Debug\OOD RecipeApp.csproj.CopyComplete

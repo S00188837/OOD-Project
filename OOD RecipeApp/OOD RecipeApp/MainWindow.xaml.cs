@@ -20,13 +20,13 @@ namespace OOD_RecipeApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        Category SelectedCategory;
+        Categories SelectedCategory;
         Recipe SelectedRecipe;
 
-        List<Category> categoryList = new List<Category>();
+        List<Categories> categoryList = new List<Categories>();
         List<Recipe> recipeList = new List<Recipe>();
 
-       
+        List<RichTextBox> richList = new List<RichTextBox>();
 
 
         public MainWindow()
@@ -36,7 +36,7 @@ namespace OOD_RecipeApp
 
         private void BAddCategory_Click(object sender, RoutedEventArgs e)
         {
-            categoryList.Add(new Category(TBCategory.Text, DateTime.Now.Year));
+            categoryList.Add(new Categories(TBCategory.Text, DateTime.Now.Year));
 
             LBCategory.ItemsSource = null;
             LBCategory.ItemsSource = categoryList;
@@ -46,7 +46,7 @@ namespace OOD_RecipeApp
 
         private void BRemoveCategory_Click(object sender, RoutedEventArgs e)
         {
-            categoryList.Remove(LBCategory.SelectedItem as Category);
+            categoryList.Remove(LBCategory.SelectedItem as Categories);
             LBCategory.ItemsSource = null;
             LBCategory.ItemsSource = categoryList;
 
@@ -79,7 +79,7 @@ namespace OOD_RecipeApp
 
         private void LBCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            SelectedCategory = LBCategory.SelectedItem as Category;
+            SelectedCategory = LBCategory.SelectedItem as Categories;
 
             if (LBCategory.SelectedItem != null)
             {
@@ -96,13 +96,17 @@ namespace OOD_RecipeApp
             {
                 FlowDocument flowdoc = new FlowDocument(new Paragraph(new Run("Edit me")));
 
-                RichTB = new RichTextBox(flowdoc);
-
-                
-
-                
             }
         }
 
+        private void Customers_Click(object sender, RoutedEventArgs e)
+        {
+            NORTHWNDEntities db = new NORTHWNDEntities();
+
+            var query = from c in db.Customers
+                        select c.ContactName;
+
+            UserDataBase.ItemsSource = query.ToList();
+        }
     }
 }
