@@ -26,6 +26,7 @@ namespace OOD_RecipeApp
         List<Category> categoryList = new List<Category>();
         List<Recipe> recipeList = new List<Recipe>();
 
+       
 
 
         public MainWindow()
@@ -93,6 +94,12 @@ namespace OOD_RecipeApp
 
             if (SelectedRecipe != null)
             {
+                FlowDocument flowdoc = new FlowDocument(new Paragraph(new Run("Edit me")));
+
+                RichTB = new RichTextBox(flowdoc);
+
+                
+
                 
             }
         }
